@@ -14,9 +14,10 @@ document.getElementById('emailForm').addEventListener('submit', async function (
             url = `${baseUrl}/nueva-cuenta/${email}`;
             break;
         case 'olvide-contrasena':
-            url = `${baseUrl}/olvide-contrasena/${email}?resetLink=${encodeURIComponent(resetLink)}`;
+            url = `${baseUrl}/olvide-contrasena/${email}`;
             break;
         case 'activacion':
+            const code = prompt("Por favor, ingresa el código de activación:");
             url = `${baseUrl}/activacion/${email}?code=${encodeURIComponent(code)}`;
             break;
         case 'contrasena-cambiada':
