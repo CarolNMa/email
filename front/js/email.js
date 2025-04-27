@@ -14,11 +14,9 @@ document.getElementById('emailForm').addEventListener('submit', async function (
             url = `${baseUrl}/nueva-cuenta/${email}`;
             break;
         case 'olvide-contrasena':
-            const resetLink = prompt("Por favor, ingresa el enlace de restablecimiento de contraseña:");
             url = `${baseUrl}/olvide-contrasena/${email}?resetLink=${encodeURIComponent(resetLink)}`;
             break;
         case 'activacion':
-            const code = prompt("Por favor, ingresa el código de activación:");
             url = `${baseUrl}/activacion/${email}?code=${encodeURIComponent(code)}`;
             break;
         case 'contrasena-cambiada':
