@@ -1,0 +1,19 @@
+
+.fondo{
+    background-color: #fad4c0;
+}
+.texto{
+    font-size: 3rem;
+    color: #b09e99;
+    text-align: center;
+}
+
+.contenedor{
+    background-color: #fee9e1;
+    border-radius: 10px;
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    margin-top: 2%;
+}
+
